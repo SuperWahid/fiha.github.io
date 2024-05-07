@@ -7,16 +7,18 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-
+    <!-- icon bootsrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-
+    <!-- animsi -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- My CSS -->
     <link rel="stylesheet" href="styls.css" />
 
     <title>My Portfolio</title>
   </head>
-  <body>
+  <body id="home">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow" style="background-color: #09c11f">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background-color: #09c11f">
       <div class="container">
         <a class="navbar-brand" href="#">NurWahid</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,16 +27,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">contact</a>
+              <a class="nav-link" href="#contact">contact</a>
             </li>
           </ul>
         </div>
@@ -61,15 +63,15 @@
     <section id="about">
       <div class="container">
         <div class="row text-center mb-3">
-          <div class="col">
+          <div class="col" data-aos="zoom-out-down">
             <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, provident. Ratione quam dolores accusamus? Nam temporibus voluptatibus at quidem minima!</p>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis numquam ad, quis facere cum dolor debitis explicabo, rem autem impedit modi eligendi, praesentium voluptatum!</p>
           </div>
         </div>
@@ -88,13 +90,14 @@
     <section id="projects">
       <div class="container">
         <div class="row text-center mb-3">
-          <div class="col">
+          <div class="col" data-aos="zoom-out-down">
             <h2>My projects</h2>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+              >
               <img src="1.jpg" class="card-img-top" alt="Projects 1" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -102,7 +105,8 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1250">
+              >
               <img src="2.jpg" class="card-img-top" alt="Projects 2" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -110,7 +114,8 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+              >
               <img src="3.jpg" class="card-img-top" alt="Projects 3" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -118,7 +123,8 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1750">
+              >
               <img src="4.jpg" class="card-img-top" alt="Projects 4" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -126,7 +132,8 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+              >
               <img src="5.jpg" class="card-img-top" alt="Projects 5" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -155,18 +162,18 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form>
+            <form name="contact-potrfolio">
               <div class="mb-3">
                 <label for="nama" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="nama" aria-describedby="nama" />
+                <input type="text" class="form-control" id="nama" aria-describedby="nama" name="nama" />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
               </div>
               <button type="submit" class="btn btn-primary">KIrim</button>
             </form>
@@ -185,10 +192,31 @@
 
     <!-- Footer -->
     <footer class="text-white text-center pb-5" style="background-color: #09c11f">
-      <p>Created with love by <a href="https://www.instagram.com/fihanur19/" class="text-white fw-bold">NurWahid</a></p>
+      <p>Created with <i class="bi bi-suit-heart-fill text-danger"></i> by <a href="https://wa.me/6285643513099" target="_blank" class="text-white fw-bold">NurWahid</a></p>
     </footer>
     <!-- Akhir Footer -->
 
     <script src="ttps://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Animasi -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+
+    <!-- google sheet -->
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbwRPFLycGtpHbRIurrnDRbmqVJStCbFOKblwbUJ5DvYrDul9MpzHEZgbyXjoaaQSOpF/exec";
+      const form = document.forms["contact-potrfolio"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
